@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.head{
+    background-image: url(background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.logo{
+    cursor: pointer;
+    height: 120px;
+    width: 150px ;
+    margin-left: 50px;
+}
+.navbar{
+    width: 92%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+button{
+    color: white;
+    padding:10px 25px;
+    background: transparent;
+    border: 1px solid;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.content{
+    color: white;
+    position: absolute;
+    font-size: 40px;
+    top:50%;
+    left:40%;
+    transform:translate(-50%,-50%) ;
+}
+.sidebar{
+    width:8%;
+    height: 100vh;
+    background: linear-gradient(90deg,#00545d 0%, #000729 80%);
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+.social-link img, .info-link img{
+    width:30px;
+    margin: 5px auto;
+    cursor: pointer;
+}
+.menu{
+    width: 30px;
+    display: block;
+    cursor: pointer;
+    margin:40px auto 0;
+}
+.social-link{
+    position: absolute;
+    top:50%;
+    width: 50px;
+    align-items: center;
+    margin-left: 30px;
+   
+}
+.info-link{
+    position: absolute;
+    bottom: 40px;
+    width:50px;
+    margin-left:30px;
+}
+.bubble img {
+     width: 40px;
+     animation:sample 7s linear infinite;
+}
+.bubble{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@keyframes sample
+{
+    0%{
+        transform:translateY(0);
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 2;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        transform: translateY(-95vh);
+    }
+}
+.bubble img:nth-child(1){
+    width: 40px;
+}
+.bubble img:nth-child(2){
+    width: 30px;
+    animation-delay: 2.5s;
+}
+.bubble img:nth-child(3){
+    width: 40px;
+    animation-delay: 2s;
+}
+.bubble img:nth-child(4){
+    width: 20px;
+    animation-delay: 3.5s;
+}
+.bubble img:nth-child(5){
+    width: 25px;
+    animation-delay: 2s;
+}
+.bubble img:nth-child(6){
+    width: 40px;
+    animation-delay: 3.5s;
+}
+@media screen and (max-width:600px)
+{
+    .head
+    {
+        background-image: url(https://w0.peakpx.com/wallpaper/199/736/HD-wallpaper-fish-tank-thumbnail.jpg);
+        /* background-repeat: no-repeat; */
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+    }
+    .sidebar{
+        width:100%;
+        height:8%;
+        top: auto;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+    .menu{
+        width: 18px;
+        margin: 30px;
+    }
+    .social-link{
+        position: unset;
+        text-align: center;
+        width:auto;
+        transform: none;
+    }
+    .info-link{
+        position:unset;
+        text-align: center;
+        width: auto;
+        transform: none;
+    }
+}
+
+
+
+
